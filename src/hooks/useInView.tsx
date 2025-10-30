@@ -14,7 +14,7 @@ export const useInView = (options = {}) => {
         }
       },
       {
-        threshold: 0.2, // Trigger when 30% of element is visible
+        threshold: 0.1, // Trigger when 30% of element is visible
         rootMargin: "50px", // Trigger 50px before element enters viewport
         ...options,
       }
