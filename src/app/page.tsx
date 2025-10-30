@@ -57,7 +57,7 @@ export default function Home() {
       {/* About Us */}
       <section className="bg-[#000010] py-16 md:py-20" ref={aboutRef}>
         <div
-          className={`${styles.boxWidth} mx-auto ${aboutInView ? "animate-in fade-in slide-in-from-bottom-30 duration-1000" : "opacity-0 translate-y-[50px]"}`}
+          className={`${styles.boxWidth} mx-auto ${aboutInView ? "animate-in fade-in slide-in-from-bottom-30 duration-500" : "opacity-0 translate-y-[50px]"}`}
         >
           <div className="flex flex-row px-6 md:px-0">
             <div>
@@ -162,7 +162,7 @@ export default function Home() {
       {/* Our Solutions */}
       <section className="bg-[#000010] py-16 md:py-20" ref={solutionsRef}>
         <div
-          className={`${styles.boxWidth} mx-auto ${solutionsInView ? "animate-in fade-in slide-in-from-bottom-30 duration-1000" : "opacity-0 translate-y-[50px]"}`}
+          className={`${styles.boxWidth} mx-auto ${solutionsInView ? "animate-in fade-in slide-in-from-bottom-30 duration-500" : "opacity-0 translate-y-[50px]"}`}
         >
           <div className="px-6 md:px-0">
             <div>
@@ -227,7 +227,7 @@ export default function Home() {
         ref={industriesRef}
       >
         <div
-          className={`${styles.boxWidth} mx-auto px-6 md:px-0 ${industriesInView ? "animate-in fade-in slide-in-from-bottom-30 duration-1000" : "opacity-0 translate-y-[50px]"}`}
+          className={`${styles.boxWidth} mx-auto px-6 md:px-0 ${industriesInView ? "animate-in fade-in slide-in-from-bottom-30 duration-500" : "opacity-0 translate-y-[50px]"}`}
         >
           <div className="px-6 md:px-0">
             <div>
