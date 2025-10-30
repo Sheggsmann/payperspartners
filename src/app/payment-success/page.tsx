@@ -3,13 +3,12 @@
 import Link from "next/link";
 
 import { useSearchParams } from "next/navigation";
+import { Suspense } from "react";
 
-export default function PaymentSuccess() {
+function PaymentSuccessContent() {
   const searchParams = useSearchParams();
 
   const amount = searchParams.get("amount");
-
-  console.log(amount);
 
   return (
     <main className="max-w-6xl min-h-[84vh] mx-auto p-10 text-white bg-black text-center flex items-center justify-center">
@@ -27,5 +26,21 @@ export default function PaymentSuccess() {
         </div>
       </div>
     </main>
+  );
+}
+
+export default function PaymentSuccess() {
+  return (
+    <Suspense
+      fallback={
+        <main className="max-w-6xl min-h-[84vh] mx-auto p-10 text-white bg-black text-center flex items-center justify-center">
+          <div className="mb-10">
+            <h1 className="text-4xl font-extrabold mb-2">Loading...</h1>
+          </div>
+        </main>
+      }
+    >
+      <PaymentSuccessContent />
+    </Suspense>
   );
 }
