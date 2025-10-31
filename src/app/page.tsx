@@ -183,7 +183,7 @@ export default function Home() {
               {ourSolutions.map((solution, index) => (
                 <div
                   key={index}
-                  className="h-[300px] md:h-[350px] bg-[#0f0f1a] relative"
+                  className="min-h-[390px] md:h-[350px] bg-[#0f0f1a] relative"
                 >
                   <div
                     className="p-2 rounded-t-2xl"

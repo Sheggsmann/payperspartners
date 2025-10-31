@@ -169,7 +169,7 @@ export default function PricingPage() {
               )}
             </div>
           ) : (
-            <div className="mt-6 px-4 overflow-y-scroll">
+            <div className="mt-6 px-4 py-10 overflow-y-scroll">
               {selectedItem && (
                 <div>
                   <div className="pb-4 border-b border-white/70">
